@@ -1,0 +1,214 @@
+/* colors */
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --lightcyan: hsl(179.5,47.2%,51.8%);
+  --verylightcyan: hsl(180.7,87.2%,81.6%);
+  --green: hsl(71, 73%, 54%);
+  --lightgray: hsl(204, 43%, 93%);
+  --darkgray: hsl(218, 22%, 67%);
+}
+
+/* globals */
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* inline */
+
+.inline {
+  display: inline;
+}
+
+.button {
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--green);
+  padding: .95rem;
+  border-radius: .35rem;
+  max-width: 25rem;
+}
+
+.button:hover {
+  box-shadow: 5px 5px 5px hsla(0, 100%, 0%, 0.15);
+  cursor: pointer;
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.button a:hover {
+  color: hsla(0, 1%, 100%, .75);
+}
+
+/* typography */
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.cyantext {
+  color: var(--cyan);
+}
+
+.greentext {
+  color: var(--green);
+}
+
+.verylightcyantext {
+  color: var(--verylightcyan);
+}
+
+/* body text - small */
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: .75rem; /* 12 px */
+  line-height: 1.5;
+  color: var(--darkgray);
+}
+
+@media screen and (min-width:1024px) {
+  body {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+/* body text - medium */
+
+.subtitlefont {
+  font-size: .9375rem; /* 14px*/
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width:1024px) {
+  .subtitlefont {
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+/* body text - large */
+
+.titlefont {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+}
+
+@media screen and (min-width:1024px) {
+  .titlefont {
+    font-size: 1.625rem; /* 26px */
+  }
+}
+
+/* site setup */
+
+.full {
+  background-color: var(--lightgray);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* pricegrid setup */
+
+.pricegrid {
+  background-color: white;
+  box-shadow: 5px 5px 5px hsla(218, 22%, 67%, 0.25);
+  border-radius: .625rem;
+  margin: 2.5rem 2rem 2.5rem 2rem;
+}
+
+@media screen and (min-width:425px) {
+  .pricegrid {
+    min-width: 30vw;
+  }
+}
+
+/* card section padding*/
+
+.card {
+  padding: 1.875rem 1.6875rem 1.875rem 1.6875rem;
+}
+
+@media screen and (min-width:425px) {
+  .card {
+    padding: 2.875rem 2.5rem 2.875rem 2.5rem;
+  }
+}
+
+/* card one */
+
+.join .subtitlefont {
+    margin-top: 1.5625rem;
+  }
+
+.join {
+  line-height: 2;
+}
+
+@media screen and (min-width:425px) {
+  .join p {
+    max-width: 33.125rem;
+  }
+}
+
+/* flexbox */
+
+@media screen and (min-width:425px) {
+  .flexdesktop {
+    display: flex;
+  }
+}
+
+/* card two */
+
+.subscribe {
+  background-color: var(--cyan);
+  color: white;
+}
+
+@media screen and (min-width:425px) {
+  .subscribe {
+    border-bottom-left-radius: .625rem;
+    flex: 1;
+  }
+}
+
+.subscribe .margin {
+  margin-top: 1rem;
+  margin-bottom: 1.8125rem;
+}
+
+/* card three */
+
+.why-us {
+  background-color: var(--lightcyan);
+  border-bottom-left-radius: .625rem;
+  border-bottom-right-radius: .625rem;
+  color: white;
+}
+
+@media screen and (min-width:425px) {
+  .why-us {
+    border-bottom-right-radius: .625rem;
+    border-bottom-left-radius: 0rem;
+    flex: 1;
+  }
+}
+
+
